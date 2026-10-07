@@ -1,0 +1,13 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Control Café 2.0</title><link rel="stylesheet" href="styles.css"></head><body>
+<header><div><h1>☕ Control Café 2.0</h1><p>Control simple de cápsulas</p></div><span id="today"></span></header>
+<nav id="nav"></nav><main>
+<section id="previous" class="screen active"><small>INICIO DE JORNADA</small><h2>Cápsulas usadas del día anterior</h2><p>Ingresá lo pendiente. Se incorpora al consumo del día actual.</p><div id="prevGrid" class="grid"></div><button id="savePrev">Guardar</button></section>
+<section id="totals" class="screen"><small>CONSULTA RÁPIDA</small><h2>Totales</h2><p>Actualizados hasta este momento.</p><div id="totalsGrid" class="totals"></div></section>
+<section id="dispenser" class="screen"><small>MOVIMIENTO DEL DÍA</small><h2>Dispenser</h2><p>Stock inicial y reposiciones.</p><div id="disp"></div><button id="saveDisp">Guardar dispenser</button></section>
+<section id="daily" class="screen"><small>CIERRE DE JORNADA</small><h2>Cierre del día</h2><p>Ingresá lo que quedó en el dispenser.</p><div id="close"></div><div id="preview" class="card"></div><button id="closeDay">Cerrar día</button></section>
+<section id="boxes" class="screen"><small>CONTROL INTERNO</small><h2>Cajas</h2><p>50 cápsulas = 1 caja. Sugerencia desde 75%.</p><div id="boxesGrid"></div><div class="note">Las cajas son solo una herramienta de chequeo y no aparecen en los informes.</div></section>
+<section id="weekly" class="screen"><small>SEMANA LABORAL · LUNES A VIERNES</small><h2>Cierre semanal</h2><div id="weeklySummary" class="card"></div><button id="closeWeek">Cerrar semana y reiniciar contador</button></section>
+<section id="monthly" class="screen"><small>CIERRE DEL PERÍODO</small><h2>Cierre mensual</h2><div id="monthlySummary" class="card"></div><button id="closeMonth">Cerrar mes y generar informe</button></section>
+<section id="reports" class="screen"><small>HISTORIAL</small><h2>Informes</h2><p>Solo cápsulas utilizadas, por variedad y color.</p><div class="reportCtl"><label>Diario <input id="rDate" type="date"></label><button id="pdfDay">Descargar PDF diario</button></div><div class="reportCtl"><label>Semanal <select id="rWeek"></select></label><button id="pdfWeek">Descargar PDF semanal</button></div><div class="reportCtl"><label>Mensual <select id="rMonth"></select></label><button id="pdfMonth">Descargar PDF mensual</button></div><div id="reportPreview" class="card"></div></section>
+</main><div id="toast"></div>
+<script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.2/dist/jspdf.umd.min.js"></script><script src="app.js"></script></body></html>
