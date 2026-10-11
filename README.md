@@ -1,4 +1,4 @@
-# Control Café 2.0 · Web MVP v6
+# Control Café 2.0 · Web MVP v7
 
 Versión web independiente del proyecto Flutter/Codex para empezar a probar la lógica de Control Café 2.0.
 
