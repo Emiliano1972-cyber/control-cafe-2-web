@@ -64,7 +64,7 @@ async function pdf(title,sub,c,file,ask=true){
     const blob=makePDF(title,sub,c);
     const pdfFile=new File([blob],file,{type:'application/pdf'});
     if(navigator.share && navigator.canShare && navigator.canShare({files:[pdfFile]})){
-      try{await navigator.share({files:[pdfFile],title:title,text:sub});toast('Informe listo para compartir o guardar')}
+      try{await navigator.share({files:[pdfFile],title:title});toast('Informe listo para compartir o guardar')}
       catch(e){if(e.name!=='AbortError')window.alert('El PDF se generó, pero no se pudo abrir el menú para compartirlo. Intentá nuevamente.')}
       return;
     }
