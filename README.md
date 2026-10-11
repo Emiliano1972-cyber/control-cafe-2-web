@@ -33,3 +33,12 @@ La tabla de cierre muestra variedad, color, disponible y restante. El consumo ca
 
 ## v3
 Los colores se muestran junto al nombre de cada variedad en las tablas y cierres; se eliminan columnas de color duplicadas. Los PDF también incluyen un indicador visual de color por variedad.
+
+
+## Mejoras de octubre de 2026
+- Confirmación antes de generar los informes PDF diarios, semanales y mensuales.
+- Recuperación del generador PDF desde fuentes alternativas si la primera no carga.
+- En iPhone, el PDF puede abrir el menú nativo para guardarlo en Archivos o compartirlo por WhatsApp/Mail; en escritorio se descarga directamente.
+- Cierre mensual con confirmación y opción de generar el PDF en el mismo paso.
+- Tablas adaptadas a tarjetas verticales en pantallas pequeñas para evitar desplazamiento horizontal.
+- Ícono personalizado para agregar Control Café 2.0 a la pantalla de inicio.
